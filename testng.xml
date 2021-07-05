@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name ="AdvancedApiTests" >
+
+    <test name = "Kievphp">
+
+        <parameter name="labelUrl" value=""/>
+        <parameter name="urlOfAuthRequester" value=""/>
+        <parameter name="email" value=""/>
+        <parameter name="getLoginsToken" value=""/>
+        <parameter name="password" value=""/>
+        <parameter name="sourcePlatform" value=""/>
+        <parameter name="rememberMeEmpty" value=""/>
+        <parameter name="DB_URL" value=""/>
+        <parameter name="DB_USER" value=""/>
+        <parameter name="DB_PASSWORD" value=""/>
+        <parameter name="indexForAssetId" value=""/>
+
+        <classes>
+            <class name ="AdvancedTests.Real.account.GetAccount"/>
+            <class name ="AdvancedTests.Real.account.PostAccount"/>
+            <class name ="AdvancedTests.Real.accountSettings.GetAccountSettings"/>
+            <class name ="AdvancedTests.Real.accountSwitch.GetAccountSwitch"/>
+            <class name ="AdvancedTests.Real.assets.GetAssets"/>
+            <class name ="AdvancedTests.Real.assets.GetAssetsID"/>
+            <class name ="AdvancedTests.Real.assets.GetSchedules"/>
+            <class name ="AdvancedTests.Real.auth.PostAuth"/>
+            <class name ="AdvancedTests.Real.auth.PostAuthMobile"/>
+            <class name ="AdvancedTests.Real.bonuses.GetCurrentBonusData"/>
+            <class name ="AdvancedTests.Real.contacts.GetContactUs"/>
+            <class name ="AdvancedTests.Real.favorites.PostFavorites"/>
+            <class name ="AdvancedTests.Real.favorites.DeleteFavorites"/>
+            <class name ="AdvancedTests.Real.init.GetCurrentLanguage"/>
+            <class name ="AdvancedTests.Real.init.GetInit"/>
+            <class name ="AdvancedTests.Real.init.PutInit"/>
+
+        </classes>
+    </test>
+        </suite>
+
+
+
